@@ -1,0 +1,134 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E60012;
+    padding: var(--spacing-lg);
+}
+
+.login-container {
+    background: var(--white);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 480px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.login-icon {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.trophy-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: var(--white);
+    border: 3px solid var(--primary-red);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.login-title {
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.login-subtitle {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: var(--spacing-md);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: var(--gray);
+}
+
+.input-with-icon .form-input {
+    padding-left: calc(var(--spacing-md) * 3);
+}
+
+.error-message {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background: rgba(220, 20, 60, 0.1);
+    border: 1px solid var(--primary-red);
+    border-radius: var(--radius-md);
+    color: var(--primary-red);
+    font-size: 0.95rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.login-btn {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: 1.125rem;
+}
+
+.demo-accounts {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--light-gray);
+    text-align: center;
+}
+
+.demo-title {
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.875rem;
+}
+
+.demo-item {
+    color: var(--gray);
+    font-size: 0.875rem;
+    margin: var(--spacing-xs) 0;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: var(--spacing-xl);
+    }
+
+    .login-title {
+        font-size: 1.25rem;
+    }
+
+    .trophy-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 2rem;
+    }
+}

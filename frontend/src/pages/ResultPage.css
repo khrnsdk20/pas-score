@@ -1,0 +1,192 @@
+.result-page {
+    min-height: 100vh;
+    background: var(--off-white);
+}
+
+.result-header {
+    background: var(--gradient-red);
+    padding: var(--spacing-2xl) 0;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.result-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.participant-info {
+    flex: 1;
+}
+
+.participant-name {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.participant-number,
+.participant-school {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin: var(--spacing-xs) 0;
+}
+
+.qr-code-container {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.results-container {
+    padding-bottom: var(--spacing-3xl);
+}
+
+.total-score-card {
+    background: var(--white);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    border: 3px solid var(--primary-red);
+}
+
+.total-score-card h3 {
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-md);
+}
+
+.total-score {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary-red);
+    margin: var(--spacing-lg) 0;
+}
+
+.live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: rgba(220, 20, 60, 0.1);
+    border-radius: var(--radius-full);
+    color: var(--primary-red);
+    font-weight: 600;
+}
+
+.live-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--primary-red);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.competitions-results {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.competition-result {
+    overflow: hidden;
+}
+
+.competition-result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.competition-result-header h3 {
+    color: var(--primary-red);
+    font-size: 1.5rem;
+}
+
+.competition-total {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-red);
+}
+
+.scores-table {
+    overflow-x: auto;
+}
+
+.scores-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.scores-table th,
+.scores-table td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.scores-table th {
+    background: var(--off-white);
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.scores-table td {
+    color: var(--gray);
+}
+
+.score-value {
+    font-weight: 700;
+    color: var(--primary-red);
+    font-size: 1.1rem;
+}
+
+.loading-container,
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: var(--spacing-lg);
+    text-align: center;
+}
+
+.empty-state {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    color: var(--gray);
+}
+
+@media (max-width: 768px) {
+    .result-header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .participant-name {
+        font-size: 2rem;
+    }
+
+    .total-score {
+        font-size: 3rem;
+    }
+
+    .competition-result-header {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+
+    .scores-table {
+        font-size: 0.9rem;
+    }
+}

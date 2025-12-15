@@ -1,0 +1,129 @@
+.result-checker {
+    padding: var(--spacing-3xl) 0;
+    background: var(--off-white);
+}
+
+.result-checker-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-xl);
+    background: rgba(230, 0, 18, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.section-title {
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-sm);
+    font-size: 2rem;
+}
+
+.section-description {
+    color: var(--gray);
+    font-size: 1rem;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.search-form {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    flex: 1;
+    font-size: 1rem;
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.btn-search {
+    padding: var(--spacing-md) var(--spacing-2xl);
+    white-space: nowrap;
+}
+
+.search-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.option-card {
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    text-align: left;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.qr-option {
+    background: rgba(59, 130, 246, 0.05);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.search-option {
+    background: rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.option-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.option-icon {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.option-content h4 {
+    color: var(--dark-gray);
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.option-content p {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.demo-info {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: rgba(230, 0, 18, 0.05);
+    border-left: 4px solid var(--primary-red);
+    border-radius: var(--radius-md);
+    color: var(--gray);
+    font-size: 0.95rem;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-options {
+        grid-template-columns: 1fr;
+    }
+
+    .result-checker {
+        padding: var(--spacing-2xl) 0;
+    }
+}

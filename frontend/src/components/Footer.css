@@ -1,0 +1,29 @@
+.footer {
+    background: #1E293B;
+    color: var(--white);
+    padding: var(--spacing-2xl) 0;
+    margin-top: var(--spacing-3xl);
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-title {
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-organizer {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    margin: 0;
+}
